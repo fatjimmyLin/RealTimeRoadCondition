@@ -22,9 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        int a = 8;
-        int b = 6;
-        int c = 0;
+
     }
 
 //fatjimmy
