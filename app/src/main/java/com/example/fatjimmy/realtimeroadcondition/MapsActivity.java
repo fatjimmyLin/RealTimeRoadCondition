@@ -24,6 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         int a = 8;
         int b = 6;
+        int c = 0;
     }
 
 //fatjimmy
