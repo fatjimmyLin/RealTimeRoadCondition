@@ -11,7 +11,10 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.Manifest;
 import android.app.Activity;
@@ -70,6 +73,8 @@ public class MapsActivity extends AppCompatActivity implements
             Toast.makeText(this, "Error - Map Fragment was null!!", Toast.LENGTH_SHORT).show();
         }
 
+
+
     }
 
     protected void loadMap(GoogleMap googleMap) {
@@ -81,6 +86,15 @@ public class MapsActivity extends AppCompatActivity implements
         } else {
             Toast.makeText(this, "Error - Map was null!!", Toast.LENGTH_SHORT).show();
         }
+        MarkerOptions options = new MarkerOptions( );
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource( R.drawable.warning );
+        options.icon( icon );
+        options.position(new LatLng(22.289, 114.14));
+        options.title("Car Accident in Pokfulam Road");
+        map.addMarker( options );
+        options.position(new LatLng(22.289, 114.15));
+        options.title("HIHIHIHIHI");
+        map.addMarker( options );
     }
 
     @Override
