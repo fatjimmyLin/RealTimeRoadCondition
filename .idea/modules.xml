@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RealTimeRoadCondition.iml" filepath="$PROJECT_DIR$/RealTimeRoadCondition.iml" />
       <module fileurl="file://$PROJECT_DIR$/_220/_220.iml" filepath="$PROJECT_DIR$/_220/_220.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_220/_220.iml" filepath="$PROJECT_DIR$/_220/_220.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
